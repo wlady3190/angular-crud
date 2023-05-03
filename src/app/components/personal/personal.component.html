@@ -1,0 +1,47 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Especie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of dataPersonal">
+      <td>{{ item.name.first }} {{ item.name.last }}</td>
+      <td>{{ item.gender }}</td>
+      <td>{{ item.species }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="container">
+  <div class="card-columns row d-flex flex-wrap justify-content-between">
+    <div class="card col-lg-3 m-1 p-1" *ngFor="let personal of dataPersonal">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            class="card-img-top personal"
+            src="{{ personal.images.main }}"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Name: {{ personal.name.last }}</h5>
+            <h5 class="card-title">Last Name: {{ personal.name.first }}</h5>
+
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

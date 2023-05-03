@@ -1,0 +1,12 @@
+.personal{
+    height: 20rem;
+    object-fit: cover;
+}
+.thumbnail{
+    background: blue;
+}
+.table{
+    margin-top: 5rem;
+    position: relative;
+}
+
