@@ -1,0 +1,61 @@
+<hr>
+<hr>
+<hr>
+<hr>
+<form action="">
+
+
+<div class="row">
+
+    <div class="col">
+        <!-- Name input -->
+        <div class="form-outline">
+          <input type="text" id="ide" class="form-control" #ide/>
+          <label class="form-label" for="ide">ID</label>
+        </div>
+      </div>
+    <div class="col">
+      <!-- Name input -->
+      <div class="form-outline">
+        <input type="text" id="nombre" class="form-control" #nom/>
+        <label class="form-label" for="nombre">Name</label>
+      </div>
+    </div>
+    <div class="col">
+        <!-- Name input -->
+        <div class="form-outline">
+          <input type="text" id="apellido" class="form-control" #ape/>
+          <label class="form-label" for="apellido">Apellido</label>
+        </div>
+      </div>
+    <div class="col">
+      <!-- Email input -->
+      <div class="form-outline">
+        <input type="email" id="email" class="form-control" #email/>
+        <label class="form-label" for="email">Correo</label>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <!-- Name input -->
+    <div class="form-outline">
+      <input type="text" id="genero" class="form-control" #gen/>
+      <label class="form-label" for="genero">Género</label>
+    </div>
+  </div>
+  <div class="col">
+    <!-- Name input -->
+    <div class="form-outline">
+      <input type="text" id="modelo" class="form-control" #mod/>
+      <label class="form-label" for="modelo">Modelo de auto</label>
+    </div>
+  </div>
+
+  <input type="submit" value="Enviar" (click)="guardarNosotros(ide.value , nom.value, ape.value, email.value, gen.value, mod.value)">
+  <input type="submit" value="Actualizar" (click)="actualizarNosotros(ide.value , nom.value, ape.value, email.value, gen.value, mod.value)">
+  <input type="submit" value="Eliminar" (click)="eliminarNosotros(ide.value)">
+
+
+</form> 
+  <hr />
+
